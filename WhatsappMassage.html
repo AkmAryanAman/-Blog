@@ -155,7 +155,7 @@
 
                             <script>
                                 phone = "";
-                                text = "";
+                                text = "Hello";
                                 finalDesktop = document.getElementById("SendMassageDesktop").href;
                                 finalPhone = document.getElementById("SendMassagePhone").href;
                                 String.prototype.isNumber = function(){return /^\d+$/.test(this);}
@@ -167,6 +167,8 @@
                                     if(phone.length == 10 && phone.isNumber()){
                                         if(phone[0] == '+' && phone[1] == '9' && phone[2] == '1'){
                                             document.getElementById("invalidNumber").style.display = "block";
+                                            document.getElementById("SendMassageDesktop").classList.add("disabled");
+                                            document.getElementById("SendMassagePhone").classList.add("disabled");
                                         }
                                         else{
                                             document.getElementById("invalidNumber").style.display = "none";
@@ -187,6 +189,8 @@
                                         }
                                         else{
                                             document.getElementById("invalidNumber").style.display = "block";
+                                            document.getElementById("SendMassageDesktop").classList.add("disabled");
+                                            document.getElementById("SendMassagePhone").classList.add("disabled");
                                         }
                                     }
                                     document.getElementById("SendMassageDesktop").href= finalDesktop;
