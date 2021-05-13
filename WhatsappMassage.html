@@ -197,15 +197,14 @@
                                     this.text = document.getElementById("text").value;
 
                                     if(length.text != 0){
-                                        finalDesktop = text + "";
-                                        finalPhone = text + "";
+                                        
                                     }
                                     else{
-                                        finalDesktop += "Hello";
-                                        finalPhone += "Hello";
+                                        text = "Hello";
                                     }
-                                    document.getElementById("SendMassageDesktop").href= finalDesktop;
-                                    document.getElementById("SendMassagePhone").href= finalPhone;
+                                    
+                                    document.getElementById("SendMassageDesktop").href= finalDesktop + text;
+                                    document.getElementById("SendMassagePhone").href= finalPhone + text ;
                                 }
 
                             </script>
