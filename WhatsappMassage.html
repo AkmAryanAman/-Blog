@@ -158,12 +158,13 @@
                                 text = "";
                                 finalDesktop = document.getElementById("SendMassageDesktop").href;
                                 finalPhone = document.getElementById("SendMassagePhone").href;
+                                String.prototype.isNumber = function(){return /^\d+$/.test(this);}
                                 
                                 
                                 function GetPhone(){
                                     this.phone = document.getElementById("phone").value;
                                     
-                                    if(phone.length == 10){
+                                    if(phone.length == 10 && phone.isNumber()){
                                         if(phone[0] == '+' && phone[1] == '9' && phone[2] == '1'){
                                             document.getElementById("invalidNumber").style.display = "block";
                                         }
@@ -177,7 +178,7 @@
                                         }
                                     }
                                     else{
-                                        if(length.phone == 13 && phone[0] == '+'&& phone[1] == '9' && phone[2] == '1'){
+                                        if(length.phone == 13 && phone[0] == '+'&& phone[1] == '9' && phone[2] == '1' && phone.isNumber()){
                                             document.getElementById("invalidNumber").style.display = "none";
                                             document.getElementById("SendMassageDesktop").classList.remove("disabled");
                                             document.getElementById("SendMassagePhone").classList.remove("disabled");
