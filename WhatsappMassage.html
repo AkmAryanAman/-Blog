@@ -78,11 +78,11 @@
                                 <h2 align="center" style="font-family: Original Surfer;font-size: 20px;"> Aryan's Web Application</h2>
                                 <p align="center" style="font-family: Courgette;font-size: 14px;">Follow on :</p>
                                 <p align="center" style="font-family: Courgette;font-size: 24px;">
-                                    <a onclick="location.href='https\:\/\/www.facebook.com\/aryan.aman.3538\/'" onmouseover="this.style='cursor:pointer;'"> <i class="fa fa-facebook-f" > </i> </a>
+                                    <a onclick="location.href='#'" onmouseover="this.style='cursor:pointer;'"> <i class="fa fa-facebook-f" > </i> </a>
                                     &nbsp;
-                                    <a onclick="location.href='https\:\/\/www.instagram.com\/aryan_aman_1\/'" onmouseover="this.style='cursor:pointer;'"> <i class="fa fa-instagram "> </i> </a> 
+                                    <a onclick="location.href='#'" onmouseover="this.style='cursor:pointer;'"> <i class="fa fa-instagram "> </i> </a> 
                                     &nbsp;
-                                    <a onclick="location.href='https\:\/\/twitter.com\/AryanAm62321952'" onmouseover="this.style='cursor:pointer;'"> <i class="fa fa-twitter-square"> </i> </a> 
+                                    <a onclick="location.href='#'" onmouseover="this.style='cursor:pointer;'"> <i class="fa fa-twitter-square"> </i> </a> 
                                 </p>
                             </div>
                         </div>
@@ -132,7 +132,7 @@
                                                     <input class="w3-input " type="text" id="phone" onkeyup="GetPhone()" style="width:100%" required>
                                                     <label>Mobile Number</label>
                                                     <a id="invalidNumber" class="text-danger bold" style="display: none; font-size: 14px;">
-                                                        Enter valide Number<br> - only indian number is valid. <br> - Number Should not start with (+91) or (0).<br> - Must be in 10 digit.
+                                                        Enter valide Number<br> - only indian number is valid. <br> - Number Should not start with ' +91 ' or ' 0 '.<br> - Must be in 10 digit.
                                                     </a>
                                                 </p>
                                                 <p>
@@ -155,60 +155,60 @@
 
                             <script>
                                 phone = "";
-                                text = "Hello";
+                                text = document.getElementById("text").value;
+
                                 finalDesktop = document.getElementById("SendMassageDesktop").href;
                                 finalPhone = document.getElementById("SendMassagePhone").href;
                                 String.prototype.isNumber = function(){return /^\d+$/.test(this);}
                                 
-                                
                                 function GetPhone(){
+                                    FinalNumber = "";
                                     this.phone = document.getElementById("phone").value;
                                     
                                     if(phone.length == 10 && phone.isNumber()){
                                         if(phone[0] == '+' && phone[1] == '9' && phone[2] == '1'){
                                             document.getElementById("invalidNumber").style.display = "block";
-                                            document.getElementById("SendMassageDesktop").classList.add("disabled");
-                                            document.getElementById("SendMassagePhone").classList.add("disabled");
                                         }
                                         else{
                                             document.getElementById("invalidNumber").style.display = "none";
                                             document.getElementById("SendMassageDesktop").classList.remove("disabled");
                                             document.getElementById("SendMassagePhone").classList.remove("disabled");
                                             this.phone = "+91" + phone;
-                                            finalDesktop += phone + "&text=";
-                                            finalPhone += phone + "?text=";
+                                            FinalNumber = phone;
+                                            //finalDesktop += phone + "&text=";
+                                            //finalPhone += phone + "?text=";
                                         }
                                     }
                                     else{
-                                        if(length.phone == 13 && phone[0] == '+'&& phone[1] == '9' && phone[2] == '1' && phone.isNumber()){
+                                        if(length.phone == 13 && phone[0] == '+' && phone[1] == '9' && phone[2] == '1' && phone.isNumber()){
                                             document.getElementById("invalidNumber").style.display = "none";
                                             document.getElementById("SendMassageDesktop").classList.remove("disabled");
                                             document.getElementById("SendMassagePhone").classList.remove("disabled");
-                                            finalDesktop += phone + "&text=";
-                                            finalPhone += phone + "?text=";
+                                            FinalNumber = phone;
+                                            //finalDesktop += phone + "&text=";
+                                            //finalPhone += phone + "?text=";
                                         }
                                         else{
                                             document.getElementById("invalidNumber").style.display = "block";
-                                            document.getElementById("SendMassageDesktop").classList.add("disabled");
-                                            document.getElementById("SendMassagePhone").classList.add("disabled");
                                         }
                                     }
-                                    document.getElementById("SendMassageDesktop").href= finalDesktop;
-                                    document.getElementById("SendMassagePhone").href= finalPhone;
+                                    document.getElementById("SendMassageDesktop").href= finalDesktop + phone + "&text=" + text ;
+                                    document.getElementById("SendMassagePhone").href= finalPhone + phone + "?text=" + text ;
                                 }
 
                                 function GetText(){
                                     this.text = document.getElementById("text").value;
 
                                     if(length.text != 0){
-                                        
+                                        //finalDesktop = text + "";
+                                        //finalPhone = text + "";
                                     }
                                     else{
                                         text = "Hello";
+                                        
                                     }
-                                    
-                                    document.getElementById("SendMassageDesktop").href= finalDesktop + text;
-                                    document.getElementById("SendMassagePhone").href= finalPhone + text ;
+                                    document.getElementById("SendMassageDesktop").href= finalDesktop + phone + "&text=" + text;
+                                    document.getElementById("SendMassagePhone").href= finalPhone + phone + "?text=" + text;
                                 }
 
                             </script>
