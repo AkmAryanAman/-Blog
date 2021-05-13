@@ -131,19 +131,19 @@
                                                 <p>
                                                     <input class="w3-input " type="text" id="phone" onkeyup="GetPhone()" style="width:100%" required>
                                                     <label>Mobile Number</label>
-                                                    <div id="invalidNumber" class="text-danger bold" style="display: none;">
-                                                        Enter valide Number
-                                                    </div>
+                                                    <a id="invalidNumber" class="text-danger bold" style="display: none; font-size: 14px;">
+                                                        Enter valide Number<br> - only indian number is valid. <br> - Number Should not start with ' +91 ' or ' 0 '.<br> - Must be in 10 digit.
+                                                    </a>
                                                 </p>
                                                 <p>
                                                     <input class="w3-input " type="text" onkeyup="GetText()" id="text" style="width:100%" value="Hello" required>
                                                     <label>Enter text </label>
                                                 </p>
                                                 <p class="d-none d-md-block" align="center">
-                                                    <a class="m-2 btn btn-primary" href="https://web.whatsapp.com/send?phone=" id="SendMassageDesktop" target="_blank"> Send Massage </a>
+                                                    <a class="m-2 btn btn-primary disabled" href="https://web.whatsapp.com/send?phone=" id="SendMassageDesktop" target="_blank"> Send Massage </a>
                                                 </p>
                                                 <p class="d-block d-md-none" align="center">
-                                                    <a class="m-2 btn btn-primary" href="https://wa.me/" id="SendMassagePhone" target="_blank"> Send Massage </a>
+                                                    <a class="m-2 btn btn-primary disabled" href="https://wa.me/" id="SendMassagePhone" target="_blank"> Send Massage </a>
                                                     
                                                 </p>
                                             </form>
@@ -169,6 +169,8 @@
                                         }
                                         else{
                                             document.getElementById("invalidNumber").style.display = "none";
+                                            document.getElementById("SendMassageDesktop").classList.remove("disabled");
+                                            document.getElementById("SendMassagePhone").classList.remove("disabled");
                                             this.phone = "+91" + phone;
                                             finalDesktop += phone + "&text=";
                                             finalPhone += phone + "?text=";
@@ -177,6 +179,8 @@
                                     else{
                                         if(length.phone == 13 && phone[0] == '+'&& phone[1] == '9' && phone[2] == '1'){
                                             document.getElementById("invalidNumber").style.display = "none";
+                                            document.getElementById("SendMassageDesktop").classList.remove("disabled");
+                                            document.getElementById("SendMassagePhone").classList.remove("disabled");
                                             finalDesktop += phone + "&text=";
                                             finalPhone += phone + "?text=";
                                         }
