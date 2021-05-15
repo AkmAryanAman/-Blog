@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="css.css">
     <link rel="stylesheet" href="color.css">
     <link rel="stylesheet" href="style.css">
-
+    <script async src="https://api.countapi.xyz/hit/akmaryanaman.github.io/-Blog/WhatsappMassage.html/visits?callback=TotalViwes"></script>
     
 
     <style>
@@ -240,7 +240,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-3">
-                                    
+                                    <h1><i class="fa fa-eye" aria-hidden="true"></i><span id="visits"></span></h1>
                                 </div>
                             </div>
                         </div>
@@ -339,6 +339,9 @@
             x.previousElementSibling.className = 
             x.previousElementSibling.className.replace(" w3-theme", "");
         }
+        }
+        function TotalViwes(response) {
+            document.getElementById('visits').innerText = response.value;
         }
     </script>
 
