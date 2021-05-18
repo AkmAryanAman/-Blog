@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sewakar - Skilled Staff Service</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="color.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&effect=shadow-multiple">-->
+        
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="stylesheet" href="css.css">
+        <link rel="stylesheet" href="color.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="Slide.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&effect=shadow-multiple">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Overlock SC">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body {font-family: "Roboto", sans-serif}
+            .w3-bar-block .w3-bar-item {
+            padding: 16px;
+            font-weight: bold;
+            }
+            .w3-sofia {
+            font-family: "Allerta Stencil", Sans-serif;
+            }
+            .w3-lobster {
+            font-family: "Lobster", Sans-serif;
+            }
+            .blink_me {
+            animation: blinker 1s linear infinite;
+            }
+
+            @keyframes blinker {
+            50% {
+                    opacity: 0;
+                }
+            }
+        </style>
+    </head>
+<body>
+    <div class="d-block d-lg-none">
+        <nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card" style="z-index:3;width:250px;" id="mySidebar">
+            <div class="w3-row" style="background-color: #f5f5f5;">
+                <a class="w3-col w3-bar-item w3-button w3-border-bottom w3-large " style="width:100%;"  href="index.html">
+                    <img src="sewakar Logo.jpeg" style="width:100%;" >
+                </a>
+            </div>
+            
+            <div class="w3-row" style="background-color: #0F205A;color: white;">
+                <a class="w3-bar-item w3-button" onclick="location.href='#'">Aryan Aman </a>
+                <a class="w3-bar-item w3-button" onclick="location.href='#'">Login / Signup</a>
+                
+                <a class="w3-bar-item w3-button" onclick="location.href='#'">Logout</a>
+                <a class="w3-bar-item w3-button w3-border-bottom" onclick="location.href='#'">Booking / INR : 00</a>
+                <br>
+                <a class="w3-bar-item w3-button " onclick="location.href='#'">Home</a>
+                <a class="w3-bar-item w3-button " onclick="location.href='#'">Service</a>
+                <a class="w3-bar-item w3-button" onclick="location.href='#'" >Profile</a>
+                <br><br>
+                <div hidden>
+                    <a class="w3-bar-item w3-button" onclick="myAccordion('demo')" href="javascript:void(0)">Shopping <i class="fa fa-caret-down"></i></a>
+                    <div id="demo" class="w3-hide">
+                        <a class="w3-bar-item w3-button" href="#">Products</a>
+                        <a class="w3-bar-item w3-button" href="#">Cart</a>
+                        <a class="w3-bar-item w3-button" href="#">Link</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay">
+    </div>
+
+    <div class="w3-main">
+
+        <div id="myTop" class="container-fluid w3-top w3-2021-inkwell w3-large" style="background-color: #f5f5f5;padding: 0px 0px;">
+            <div class="d-block d-lg-none" style="background-color: #0F205A;color: #EEAB28">
+                <p class="ml-4">
+                    <br>
+                    <i class="fa fa-bars w3-buttonw3-hide-large w3-xlarge" onclick="w3_open()"></i>
+                    &nbsp;&nbsp;
+                    <span id="myIntro" class="w3-sofia" >Sewakar - Skilled Staff Service</span>
+                    
+                </p>
+            </div>
+            
+            <div class="d-none d-lg-block">
+                <div class="row">
+                    <div class="col-1">
+    
+                    </div>
+                    <div class="col-md-2" onclick="location.href='#'" style="cursor:pointer">
+                        <div class="m-2">
+                            <img src="sewakar Logo.jpeg" style="width:65%;" >
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-9" style="background-color: #0F205A;">
+                        <div class="row mt-2">
+                            <div class="col-12">
+                                
+                                <p class="d-none d-md-block" align="right" >
+                                    <a style="font-size: 14px;">Follow us : </a>
+                                    &nbsp;&nbsp;&nbsp;
+                                    <a onclick="location.href='https\:\/\/www.facebook.com\/aryan.aman.3538\/'" onmouseover="this.style='cursor:pointer;'" target="_blank">
+                                        <i class="fa fa-facebook-square text-primary" style="font-size: 16px;color: #4b26f0;"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;
+                                    <a onclick="location.href='https\:\/\/www.instagram.com\/aryan_aman_1\/'" onmouseover="this.style='cursor:pointer;'" target="_blank">
+                                        <i class="fa fa-instagram" style="color: #C3073F;font-size: 16px;"></i>
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;
+                                    <a onclick="location.href='https\:\/\/twitter.com\/AryanAm62321952'" onmouseover="this.style='cursor:pointer;'" target="_blank"> 
+                                        <i class="fa fa-twitter-square" style="color: #28DCEE;font-size: 16px;"> </i> 
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;
+            
+                                </p>
+                                
+                            </div>
+                        </div>
+                        <div class="row" style="font-size: 14px;">
+                            <div class="col-12">
+                                <p align="right" style="cursor:pointer">
+                                    <a onmouseover="ChangeMenuList(this)" onmouseout="RemoveMenuList(this)">Home</a>
+                                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                                    <a onmouseover="ChangeMenuList(this)" onmouseout="RemoveMenuList(this)">Booking</a>
+                                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                                    <a onmouseover="ChangeMenuList(this)" onmouseout="RemoveMenuList(this)">Login</a>
+                                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                                    <a onmouseover="ChangeMenuList(this)" onmouseout="RemoveMenuList(this)">Signup</a>
+                                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                                    <a onmouseover="ChangeMenuList(this)" onmouseout="RemoveMenuList(this)">Profile</a>
+                                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                                    <a onmouseover="ChangeMenuList(this)" onmouseout="RemoveMenuList(this)"> Aryan Aman <i class="fa fa-caret-down"></i></a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+            
+        </div>
+
+        <br><br><br><br><br>
+
+
+        <div class="container-fluid" style="background-color: #f0eadf">
+            <br>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="col-12">
+                        <br><br>
+                        <div class="row">
+                            <div class="col-2">
+
+                            </div>
+                            <div class="col-9" style="font-family: Overlock SC;color: #0F205A;">
+                                <h3  style="font-weight: bold;">SEWAKAR</h3>
+                                <hr class="mb-4" style="height: 8px;background-color: #0F205A;">
+                                <h4 class="mb-4" style="font-weight: bold; ">THIS PLATFORM</h4>
+                                <p class="mb-4">Will Act as Bridge between the job seeker and the job provider</p>
+                                <br>
+                                <p align="center"><a class="btn" style="background-color: #0F205A;color: white;">Enquiry now</a></p>
+                            </div>
+                            <div class="col-1">
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5" style="box-shadow: #28DCEE;background-color: #ebbb5d;border-radius: 200px;">
+                    <div class="m-2">
+                        <img src="Home1.JPG" class="img-rounded" style="border-radius: 200px;" width="100%">
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+
+        <div class="container">
+            <br>
+            <div class="row">
+                <div class="col-12">
+                    <h3 align="center" style="font-weight: bold;color: #0F205A;">
+                        <a class="w3-border-bottom">Our Services</a>
+                    </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-12 col-md-10 m-4">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p align="center">
+                                        <img src="AC repair.png" width="50%">
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <p align="center">AC Repair</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p align="center">
+                                        <img src="Appliances repair.png" width="50%">
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <p align="center">Appliances repair</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p align="center">
+                                        <img src="Construction.png" width="50%">
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <p align="center">Construction</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <br><br>
+
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p align="center">
+                                        <img src="Electrical repair.png" width="50%">
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <p align="center">Electrical repair</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p align="center">
+                                        <img src="Home Care.png" width="50%">
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <p align="center">Home Care</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p align="center">
+                                        <img src="Plumbing Service.png" width="50%">
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <p align="center">Plumbing Service</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h4 align="center" style="font-weight: bold;color: #0F205A;">
+                        <a class="btn " style="background-color: #EEAB28;font-weight: bold;"> Book Now </a>
+                    </h4>
+                </div>
+            </div>
+            <br>
+        </div>
+
+        <div class="tech-slideshow">
+            <div class="mover-1"></div>
+            <div class="mover-2"></div>
+        </div>
+        
+
+        <br>
+
+        
+        <!-- About head -->
+        <footer class="w3-container" style="background-color: #0c1a49;">
+            <div class="container">
+                <br>
+                <div class="row w3-border-bottom ">
+                    <div class="col-md-7" style="color: #EEAB28">
+                        <h3 class="w3-sofia">Sewakar - Skilled Staff Service</h3>
+                    </div>
+                    <div class="col-1 d-block d-md-none">
+                        <br><br>
+                    </div>
+                    <div class="col-md-5" style="color: #C5C6C7;">
+                        <p align="center" style="font-family: Overlock SC;font-size: 18px;">Contact us : 1234567890 </p>
+                        <p class="d-none d-md-block" align="center">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a onclick="location.href='https\:\/\/web.whatsapp.com\/send?phone=6207191827&text=Hello!!'" onmouseover="this.style='cursor:pointer;'" target="_blank">
+                                <i class="fa fa-whatsapp" style="color: #34B7F1;font-size: 24px;"></i>
+                            </a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a onclick="location.href='mailto:akm.aryanaman@gmail.com'" onmouseover="this.style='cursor:pointer;'" target="_blank">
+                                <i class="fa fa-envelope-o text-white" style="font-size: 24px;color: #ec6161;"></i>
+                            </a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a onclick="location.href='https\:\/\/www.facebook.com\/aryan.aman.3538\/'" onmouseover="this.style='cursor:pointer;'" target="_blank">
+                                <i class="fa fa-facebook-square text-primary" style="font-size: 24px;color: #4b26f0;"></i>
+                            </a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a onclick="location.href='https\:\/\/www.instagram.com\/aryan_aman_1\/'" onmouseover="this.style='cursor:pointer;'" target="_blank">
+                                <i class="fa fa-instagram" style="color: #C3073F;font-size: 24px;"></i>
+                            </a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a onclick="location.href='https\:\/\/twitter.com\/AryanAm62321952'" onmouseover="this.style='cursor:pointer;'" target="_blank"> 
+                                <i class="fa fa-twitter-square" style="color: #28DCEE;font-size: 24px;"> </i> 
+                            </a>
+    
+                        </p>
+                        <p class="d-block d-md-none" align="center">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a onclick="location.href='https\:\/\/wa.me\/+916207191827?text=Hllo Sir.'" onmouseover="this.style='cursor:pointer;'" target="_blank">
+                                <i class="fa fa-whatsapp" style="color: #34B7F1;font-size: 24px;"></i>
+                            </a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a onclick="location.href='mailto:akm.aryanaman@gmail.com'" onmouseover="this.style='cursor:pointer;'" target="_blank">
+                                <i class="fa fa-envelope-o text-white" style="font-size: 24px;color: #ec6161;"></i>
+                            </a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a onclick="location.href='https\:\/\/www.facebook.com\/aryan.aman.3538\/'" onmouseover="this.style='cursor:pointer;'" target="_blank">
+                                <i class="fa fa-facebook-square text-primary" style="font-size: 24px;color: #4b26f0;"></i>
+                            </a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a onclick="location.href='https\:\/\/www.instagram.com\/aryan_aman_1\/'" onmouseover="this.style='cursor:pointer;'" target="_blank">
+                                <i class="fa fa-instagram" style="color: #C3073F;font-size: 24px;"></i>
+                            </a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a onclick="location.href='https\:\/\/twitter.com\/AryanAm62321952'" onmouseover="this.style='cursor:pointer;'" target="_blank"> 
+                                <i class="fa fa-twitter-square" style="color: #28DCEE;font-size: 24px;"> </i> 
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <div class="row text-secondary" style="font-size: 12px;">
+                    <div class="col-md-3">
+                        <p style="font-size: 15px;font-weight: bold;"><br></p>
+                        <p onmouseover="ChangeColor(this)" onmouseout="RemoveColor(this)"> Working hours : Mon - Fri / 8:00 - 18:00</p>
+                        <p onmouseover="ChangeColor(this)" onmouseout="RemoveColor(this)"> ≻ Free Support : +91 0123456789</p>
+                        <p onmouseover="ChangeColor(this)" onmouseout="RemoveColor(this)"> ≻ Order Support :Send email</p>
+                        <p onmouseover="ChangeColor(this)" onmouseout="RemoveColor(this)"> ≻ Return Policy</p>
+                        <p onmouseover="ChangeColor(this)" onmouseout="RemoveColor(this)"> ≻ Delivery</p>
+                        <hr class="d-block d-md-none">
+                    </div>
+                    <div class="col-md-3">
+                        <p style="font-size: 15px;font-weight: bold;">Quick Contact</p>
+                        <p onmouseover="ChangeColor(this)" onmouseout="RemoveColor(this)"> ≻ Returns Policy</p>
+                        <p onmouseover="ChangeColor(this)" onmouseout="RemoveColor(this)"> ≻ About Us</p>
+                        <p onmouseover="ChangeColor(this)" onmouseout="RemoveColor(this)"> ≻ Our Services</p>
+                        <p onmouseover="ChangeColor(this)" onmouseout="RemoveColor(this)"> ≻ Contact Us</p>
+                        <p onmouseover="ChangeColor(this)" onmouseout="RemoveColor(this)"> ≻ Blog</p>
+                        <hr class="d-block d-md-none">
+                    </div>
+                    <div class="col-md-3">
+                        <p style="font-size: 15px;font-weight: bold;">Logins</p>
+                        <p onmouseover="ChangeColor(this)" onmouseout="RemoveColor(this)"> ≻ Login For Public</p>
+                        <p onmouseover="ChangeColor(this)" onmouseout="RemoveColor(this)"> ≻ Register For Public</p>
+                        <p onmouseover="ChangeColor(this)" onmouseout="RemoveColor(this)"> ≻ Login For Worker</p>
+                        <p onmouseover="ChangeColor(this)" onmouseout="RemoveColor(this)"> ≻ Register For Worker</p>
+                        <hr class="d-block d-md-none">
+                    </div>
+                    <div class="col-md-3">
+                        <p style="font-size: 15px;font-weight: bold;">Reach Us</p>
+                        <p onmouseover="ChangeColor(this)" onmouseout="RemoveColor(this)">≻ Mobile No: 9769830037, 9471924659</p>
+                        <p onmouseover="ChangeColor(this)" onmouseout="RemoveColor(this)">≻ Email : Info@Sewakar.Com</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- About Developer-->
+        <footer class="w3-container" style="background-color: #C5C6C7;">
+            <div class="row w3-border-bottom " style="font-family: Overlock SC">
+                <div class="col-12">
+                    <p align="center" style="font-size: 15px;">Copyright © 2021 Sewakar. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        
+    </div>
+
+    <script>
+    // Open and close the sidebar on medium and small screens
+    function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+    }
+
+    // Change style of top container on scroll
+    window.onscroll = function() {myFunction()};
+    function myFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.getElementById("myTop").classList.add("w3-card-4", "w3-animate-opacity");
+        document.getElementById("myIntro").classList.add("w3-show-inline-block");
+    } else {
+        document.getElementById("myIntro").classList.remove("w3-show-inline-block");
+        document.getElementById("myTop").classList.remove("w3-card-4", "w3-animate-opacity");
+    }
+    }
+
+    // Accordions
+    function myAccordion(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className += " w3-theme";
+    } else { 
+        x.className = x.className.replace("w3-show", "");
+        x.previousElementSibling.className = 
+        x.previousElementSibling.className.replace(" w3-theme", "");
+    }
+    }
+
+    function ChangeColor(x){
+        x.style="color:#EEAB28;font-size:13px;cursor:pointer";
+    }
+
+    function RemoveColor(x){
+        x.style="";
+    }
+    function ChangeButtonColor(x){
+        x.style="width:100%;background-color:#4156BE;";
+    }
+
+    function RemoveButtonColor(x){
+        x.style="width:100%;background-color: #94a3ec;";
+    }
+    function ChangeMenuList(x){
+        x.style="color:#EEAB28;font-size:15px;cursor:pointer";
+    }
+    function RemoveMenuList(x){
+        x.style="";
+    }
+    </script>
+     
+</body>
+</html> 
