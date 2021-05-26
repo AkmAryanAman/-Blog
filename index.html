@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Aryan Aman">
     <meta property="og:url"           content="https://akmaryanaman.github.io/-Blog/" />
     <meta property="og:type"          content="Blog" />
     <meta property="og:title"         content="Aryan's Blog" />
@@ -17,7 +18,7 @@
     <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Courgette ' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Lobster ' rel='stylesheet'>
-    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     
 
     <style>
@@ -28,7 +29,7 @@
         }
     </style>
 </head>
-<body oncopy="alert('This website is Protected. Don\'t copy any content'); return false " oncut="alert('This website is Protected. Don\'t copy any content');return false">
+<body  oncopy="alert('This website is Protected. Don\'t copy any content'); return false " oncut="return false">
     <div class="container-fluid" >
         <div class="row" style="background-image: url(background.jpeg);background-repeat: no-repeat;background-attachment: fixed;background-size: cover;">
             <!-- Heading or Sidebar -->
@@ -145,7 +146,7 @@
                 </div>
 
                 <!-- End of Blog -->
-
+                <!--htmlgskipstart -->
                 <script>
                     
                     Name  = [`Ankit Kumar`,`Ankit Kumar`,`Ankit Kumar`,`Ankit Kumar`,`Ankit Kumar`,`Ankit Kumar`,
@@ -191,7 +192,7 @@
                     for(i=0; i< Shayari.length; i++){
                         
                         Blogtitle += 
-                            `<div class="row" style="pointer-events: none;>
+                            `<div class="row readonly" id="ab`+ i +`" style="pointer-events: none;">
                                 <div class="col-12">
                                     <div class="mt-3 bg-white" style="box-shadow: 5px 2px 15px #E5CDF8;opacity:0.8">
                                         <div class="row m-0" >
@@ -218,6 +219,7 @@
                                         <div class="row m-0" style="background-color: #EEECAD;font-family: Overlock SC" >
                                             <div class="col-sm-11">
                                                 
+                                                
                                             </div>
                                         </div>
                                         
@@ -227,7 +229,7 @@
                     }
                     document.getElementById("Shayari").innerHTML = Blogtitle;
                 </script>
-        
+                <!--htmlgskipstop -->
 
                 
                 <br><br><hr>
