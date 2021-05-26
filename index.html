@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" hidden>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,16 +22,30 @@
     
 
     <style>
+         @media screen and (min-width: 767px){
+            .background-img{
+                background-image: url(background2.png);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+        }
         @media screen and (max-width: 767px){
             .heading{
                 font-size: 18px;
+            }
+            .background-img{
+                background-image: url(background.jfif);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
             }
         }
     </style>
 </head>
 <body  oncopy="alert('This website is Protected. Don\'t copy any content'); return false " oncut="return false">
     <div class="container-fluid" >
-        <div class="row" style="background-image: url(background.jfif);background-repeat: no-repeat;background-attachment: fixed;background-size: cover;">
+        <div class="row background-img">
             <!-- Heading or Sidebar -->
             <div class="col-md-3 bg-light">  
                 <div class="row d-none d-md-block">
