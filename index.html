@@ -28,7 +28,7 @@
         }
     </style>
 </head>
-<body >
+<body oncopy="alert('This website is Protected. Don\'t copy any content'); return false " oncut="alert('This website is Protected. Don\'t copy any content');return false">
     <div class="container-fluid" >
         <div class="row" style="background-image: url(background.jpeg);background-repeat: no-repeat;background-attachment: fixed;background-size: cover;">
             <!-- Heading or Sidebar -->
@@ -191,7 +191,7 @@
                     for(i=0; i< Shayari.length; i++){
                         
                         Blogtitle += 
-                            `<div class="row" >
+                            `<div class="row" style="pointer-events: none;>
                                 <div class="col-12">
                                     <div class="mt-3 bg-white" style="box-shadow: 5px 2px 15px #E5CDF8;opacity:0.8">
                                         <div class="row m-0" >
